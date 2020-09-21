@@ -1,0 +1,5 @@
+ion-content {
+    background: #e1eec3;
+    background: -webkit-linear-gradient(to bottom, #e1eec3, #f05053);
+    background: linear-gradient(to bottom, #e1eec3, #f05053);
+}

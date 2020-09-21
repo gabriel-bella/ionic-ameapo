@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Percent Off Calculator</h2>
+  <p>
+    This Calculator
+  </p>
+
+  <ion-item>
+    <ion-label position= "fixed">Original Price (&#8369;)</ion-label>
+    <ion-input type= "number" [(ngModel)]="initValue1"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position= "fixed">Off (%)</ion-label>
+    <ion-input type= "percentage compute" [(ngModel)]="initValue2"></ion-input>
+  </ion-item>
+
+  <button ion-button color="secondary" (click)= "compute()"> Compute </button>
+
+<br/> <br/>
+  <ion-item *ngIf= "disValue">
+    <h4> Final Price: {{ disValue | currency: '&#8369;'}} </h4>
+  </ion-item>
+
+</ion-content>
