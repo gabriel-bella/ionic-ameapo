@@ -3,3 +3,11 @@ ion-content {
     background: -webkit-linear-radient(to bottom, #e1eec3, #f05053);
     background: linear-gradient(to bottom, #e1eec3, #f05053);
 }
+h2 {
+  color: #ffa500
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
